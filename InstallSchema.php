@@ -17,7 +17,7 @@ class InstallSchema implements InstallSchemaInterface
         $installer = $setup;
         $installer->startSetup();
         /**
-         * Create table 'eastlane_delivery_rounds'
+         * Create table 'table1'
          */
         $table1 = $installer->getConnection()->newTable($installer->getTable('table1'))
             ->addColumn(
@@ -73,7 +73,7 @@ class InstallSchema implements InstallSchemaInterface
         $installer->getConnection()->createTable($table1);
         
         /**
-         * Create table 'eastlane_delivery_rounds_zipcode'
+         * Create table 'table2'
          */
 
         $table2 = $installer->getConnection()->newTable($installer->getTable('table2'))
@@ -115,7 +115,7 @@ class InstallSchema implements InstallSchemaInterface
         $installer->getConnection()->createTable($table_eastlane_delivery_rounds_zipcode);
         
         /**
-         * Create table 'eastlane_delivery_rounds_store'
+         * Create table 'table2'
          */
         
         $table3 = $installer->getConnection()->newTable($installer->getTable('table3'))
